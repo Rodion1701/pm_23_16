@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "sass": "^1.93.2"
+  },
+  "name": "pm_23_16",
+  "version": "1.0.0",
+  "description": "labs",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodion1701/pm_23_16.git"
+  },
+  "author": "Rodion1701",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rodion1701/pm_23_16/issues"
+  },
+  "homepage": "https://github.com/Rodion1701/pm_23_16#readme"
+}
