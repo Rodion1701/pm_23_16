@@ -1,0 +1,56 @@
+
+
+
+// src/app/scss/style.scss
+@import 'variables';
+@import 'header';
+@import 'education';
+@import 'hobby';
+@import 'experience';
+@import 'expertise';
+@import 'alexbrahar';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $color-text;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.cv-container {
+  width: 210mm;
+  max-width: 100%;
+  min-height: 297mm;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: $color-white;
+}
+
+.cv-main {
+  flex-grow: 1;
+}
+
+.cv-left-column {
+  background-color: $color-yellow;
+  padding: 30px 20px;
+  color: $color-dark-blue;
+}
+
+.cv-right-column {
+  background-color: $color-white;
+  padding: 30px 40px;
+}
+
+.section-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
