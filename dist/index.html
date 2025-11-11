@@ -7,71 +7,136 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/index.min.css">
 </head>
 <body>
 
 <div class="container cv-container p-0">
 
-    <header>
-        
-    </header>
+    <header class="header">
+
+    <div class="header-top-bar row g-0">
+        <div class="col-5 header-top-left d-flex align-items-center justify-content-start">
+            <div class="contact-block-area">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <span class="label">AREA</span>
+                    <span class="street-address">Your Street Address Here</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-7 header-top-right d-flex align-items-center justify-content-end">
+            <div class="contacts d-flex">
+                <div class="contact-item">
+                    <span class="label">PHONE</span>
+                    <span>+000 123 456 789</span>
+                </div>
+                <div class="contact-item">
+                    <span class="label">EMAIL</span>
+                    <span>urname@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="label">WEB</span>
+                    <span>www.websitename.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main row g-0">
+        <div class="col-5 header-photo-area">
+            <img src="imgs/photo.png" alt="Ваше фото" class="header-photo-img">
+        </div>
+        <div class="col-7 header-title-area p-5">
+            <h1>ALEX BRAHAR</h1>
+            <div class="title-underline"></div>
+            <h2>UI DESIGNER</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elitsed eiusmod
+                tempor incididunt labore dolore magna aliqua. Quis suspendisse ultrices
+                gravida euismod tempor incididunt labore magna aliqua.
+            </p>
+        </div>
+    </div>
+</header>
 
     <main class="row g-0 cv-main">
 
-        <section class="col-md-4 cv-left-column">
-            
-            <div class="hobbies-section mt-4">
-    <h3 class="section-title hobbies-title">Hobbies</h3>
-    <div class="hobbies-list d-flex justify-content-between">
-        <div class="hobby-item d-flex flex-column align-items-center">
-            <i class="fas fa-plane-departure mb-1"></i>
+        <section class="col-md-5 cv-left-column">
+            <div class="education-section">
+    <h3 class="section-title education-title">Education</h3>
+
+    <div class="education-item">
+        <div class="major">ENTER YOUR MAJOR</div>
+        <div class="university">Name Of Your University Here</div>
+        <div class="years">2005-2009</div>
+    </div>
+    <div class="education-item">
+        <div class="major">ENTER YOUR MAJOR</div>
+        <div class="university">Name Of Your University Here</div>
+        <div class="years">2009-2011</div>
+    </div>
+    <div class="education-item">
+        <div class="major">ENTER YOUR MAJOR</div>
+        <div class="university">Name Of Your University Here</div>
+        <div class="years">2009-2011</div>
+    </div>
+</div>
+            <div class="hobby-section">
+    <h3 class="section-title hobby-title">Hobbies</h3>
+    <div class="hobby-list d-flex justify-content-between text-center">
+        <div class="hobby-item">
+            <i class="fas fa-plane"></i>
             <span>Travel</span>
         </div>
-        <div class="hobby-item d-flex flex-column align-items-center">
-            <i class="fas fa-music mb-1"></i>
+        <div class="hobby-item">
+            <i class="fas fa-music"></i>
             <span>Music</span>
         </div>
-        <div class="hobby-item d-flex flex-column align-items-center">
-            <i class="fas fa-pen-fancy mb-1"></i>
+        <div class="hobby-item">
+            <i class="fas fa-pencil-alt"></i>
             <span>Writing</span>
         </div>
-        <div class="hobby-item d-flex flex-column align-items-center">
-            <i class="fas fa-chess-knight mb-1"></i>
+        <div class="hobby-item">
+            <i class="fas fa-chess-knight"></i>
             <span>Chess</span>
         </div>
     </div>
 </div>
         </section>
 
-        <section class="col-md-8 cv-right-column">
+        <section class="col-md-7 cv-right-column">
             <div class="experience-section">
     <h3 class="section-title experience-title">Experience</h3>
 
     <div class="experience-item">
-        <div class="job-title">Enter Job Position Here</div>
-        <div class="meta-info mb-2">
-            <span class="status">Present</span> | Company Name / Location
+        <div class="job-position">Enter Job Position Here</div>
+        <div class="job-meta">
+            <span class="job-present-tag">Present</span> |
+            <span>Company Name / Location</span>
         </div>
-        <p>Lorem ipsum dolor sit amet, this is a thena consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
     </div>
 
     <div class="experience-item">
-        <div class="job-title">Enter Job Position Here</div>
-        <div class="meta-info mb-2">
-            <span class="years">2017 - 2019</span> | Company Name / Location
+        <div class="job-position">Enter Job Position Here</div>
+        <div class="job-meta">
+            <span class="job-years">2017 - 2019</span> |
+            <span>Company Name / Location</span>
         </div>
-        <p>Lorem ipsum dolor sit amet, this is a thena consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
     </div>
 
     <div class="experience-item">
-        <div class="job-title">Enter Job Position Here</div>
-        <div class="meta-info mb-2">
-            <span class="years">2015 - 2017</span> | Company Name / Location
+        <div class="job-position">Enter Job Position Here</div>
+        <div class="job-meta">
+            <span class="job-years">2015 - 2017</span> |
+            <span>Company Name / Location</span>
         </div>
-        <p>Lorem ipsum dolor sit amet, this is a thena consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
     </div>
 </div>
             <div class="expertise-section mt-5">
@@ -79,19 +144,19 @@
 
     <div class="row expertise-list text-center">
         <div class="col-3 expertise-item d-flex flex-column align-items-center">
-            <div class="circle-icon mb-1"></div>
+            <div class="circle-icon mb-1">Ps</div>
             <span>Adobe Photoshop</span>
         </div>
         <div class="col-3 expertise-item d-flex flex-column align-items-center">
-            <div class="circle-icon mb-1"></div>
+            <div class="circle-icon mb-1">Ai</div>
             <span>Adobe Illustrator</span>
         </div>
         <div class="col-3 expertise-item d-flex flex-column align-items-center">
-            <div class="circle-icon mb-1"></div>
+            <div class="circle-icon mb-1">Id</div>
             <span>Adobe InDesign</span>
         </div>
         <div class="col-3 expertise-item d-flex flex-column align-items-center">
-            <div class="circle-icon mb-1"></div>
+            <div class="circle-icon mb-1">Pp</div>
             <span>Power Point</span>
         </div>
     </div>
@@ -100,7 +165,7 @@
     </main>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/index.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>

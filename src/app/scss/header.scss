@@ -1,75 +1,107 @@
-
-
-// src/app/scss/header.scss
+@import 'variables';
 
 .header-top-bar {
+  height: 60px;
+}
+
+.header-top-left {
   background-color: $color-yellow;
   color: $color-dark-blue;
-  font-size: 0.8em;
-  padding: 10px 40px;
+  padding: 0;
 
-  .contact-area {
+  .contact-block-area {
     display: flex;
     align-items: center;
-    .fas { margin-right: 5px; }
-    span { margin-right: 15px; }
-    .street-address { font-weight: bold; }
-  }
+    padding: 0 30px;
+    height: 100%;
 
-  .contact-info {
+    i {
+      margin-right: 8px;
+      font-size: 1.5em;
+    }
+
+    .label {
+      display: block;
+      font-weight: bold;
+      font-size: 0.8em;
+    }
+
+    .street-address {
+      font-size: 0.7em;
+    }
+  }
+}
+
+.header-top-right {
+  background-color: $color-white;
+  color: $color-text-grey;
+  padding: 0 40px;
+  font-size: 0.8em;
+
+  .contacts {
+    gap: 30px;
     .contact-item {
-      margin-left: 20px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+
       .label {
+        display: block;
         font-weight: bold;
-        margin-right: 5px;
+        color: $color-dark-blue;
       }
     }
   }
 }
 
-.header-main {
-  background-color: $color-dark-blue;
-  color: $color-white;
 
+.header-main {
   .header-photo-area {
-    .photo-placeholder {
+
+    padding: 0;
+
+    .header-photo-img {
       width: 100%;
-      height: 250px;
-      background-image: url('../imgs/photo.png');
-      background-size: cover;
-      background-position: center top;
-      filter: grayscale(100%) brightness(120%) sepia(80%) hue-rotate(340deg);
+      height: 100%;
+      object-fit: cover;
+      background-color: #333;
     }
   }
 
   .header-title-area {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
+    background-color: $color-dark-blue;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h1 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 2.5em;
+      font-family: $font-heading, sans-serif;
+      font-size: 2.8em;
       letter-spacing: 2px;
-      margin-bottom: 5px;
+      margin-bottom: 0.1em;
     }
 
     .title-underline {
-      width: 50px;
+      width: 60px;
       height: 3px;
       background-color: $color-yellow;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     h2 {
+      font-family: $font-heading, sans-serif;
       font-size: 1.1em;
-      font-weight: 300;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
     }
 
     p {
       font-size: 0.9em;
-      line-height: 1.4;
-      opacity: 0.8;
-      margin-top: 15px;
+      line-height: 1.5;
+      opacity: 0.85;
+      max-width: 400px;
     }
   }
 }

@@ -1,14 +1,20 @@
-
-
-
-// src/app/scss/style.scss
 @import 'variables';
 @import 'header';
+@import 'alexbrahar';
 @import 'education';
 @import 'hobby';
 @import 'experience';
 @import 'expertise';
-@import 'alexbrahar';
+
+
+// Лаб. 3: Міксин для стилізації заголовків
+@mixin section-title-mixin($font-family, $font-size) {
+  font-family: $font-family;
+  font-size: $font-size;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
 
 * {
   box-sizing: border-box;
@@ -17,40 +23,23 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: $color-text;
-  background-color: white;
+  margin: 0;
+  font-family: $font-primary;
+  color: $color-text-grey; // Використовуємо сірий для body
+  background-color: #f5f5f5; // Світлий фон сторінки
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 30px 0; // Відступи навколо CV-картки
 }
 
 .cv-container {
   width: 210mm;
   max-width: 100%;
   min-height: 297mm;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: $color-white;
-}
-
-.cv-main {
-  flex-grow: 1;
-}
-
-.cv-left-column {
-  background-color: $color-yellow;
-  padding: 30px 20px;
-  color: $color-dark-blue;
-}
-
-.cv-right-column {
-  background-color: $color-white;
-  padding: 30px 40px;
 }
 
 .section-title {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+  @include section-title-mixin($font-heading, 1.8em);
 }

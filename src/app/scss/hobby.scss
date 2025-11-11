@@ -1,31 +1,25 @@
+@import 'variables';
 
-
-// src/app/scss/education.scss
-
-.education-section {
-  margin-bottom: 40px;
+.hobby-section {
+  margin-top: 40px;
 }
-.education-title {
+
+.hobby-title {
   color: $color-dark-blue;
   padding-bottom: 5px;
-  border-bottom: 2px solid $color-dark-blue;
 }
 
-.education-item {
-  margin-bottom: 15px;
+.hobby-list {
+  margin-top: 20px;
 
-  .major {
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-
-  .university {
-    font-size: 0.9em;
-  }
-
-  .years {
-    font-weight: 300;
+  .hobby-item {
+    color: $color-dark-blue;
     font-size: 0.8em;
-    opacity: 0.8;
+
+    i {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+      display: block;
+    }
   }
 }

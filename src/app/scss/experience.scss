@@ -1,9 +1,9 @@
-
-
-// src/app/scss/experience.scss
+@import 'variables';
 
 .experience-section {
+  padding-bottom: 20px;
   margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
 }
 
 .experience-title {
@@ -16,33 +16,37 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 30px;
+    width: 50px;
     height: 3px;
-    background-color: $color-light-bg;
+    background-color: $color-yellow;
   }
 }
 
 .experience-item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
-  .job-title {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    font-size: 1.2em;
+  .job-position {
+    font-weight: bold;
+    font-size: 1.1em;
     color: $color-dark-blue;
+    margin-bottom: 5px;
   }
 
-  .meta-info {
-    font-size: 0.9em;
-    color: $color-text;
+  .job-meta {
+    font-size: 0.85em;
+    margin-bottom: 8px;
 
-    .status, .years {
-      font-weight: bold;
+    .job-present-tag {
       background-color: $color-dark-blue;
       color: $color-white;
-      padding: 2px 5px;
+      padding: 2px 6px;
       border-radius: 3px;
-      display: inline-block;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .job-years {
+      font-weight: bold;
+      color: $color-dark-blue;
     }
   }
 
