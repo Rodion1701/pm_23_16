@@ -1,24 +1,47 @@
 @import 'variables';
 
+body {
+  background-color: #e0e0e0; // Трохи сірий фон самого body, щоб було видно білий лист
+}
+
+// Основний контейнер - це наш "аркуш паперу"
 .cv-container {
-   overflow: hidden;
+  background-color: $color-white;
+  padding: 30px; // ВАЖЛИВО: Це та біла рамка навколо всього резюме
+  max-width: 1000px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-.cv-main {
+// Рядок, що тримає колонки. Має бути однаковою висоти.
+.cv-body-row {
   display: flex;
-   flex-wrap: wrap;
+  min-height: 1000px; // Мінімальна висота
 }
 
-.cv-left-column {
-   background-color: $color-yellow;
-   color: $color-dark-blue;
-   padding: 40px 30px 20px 30px;
-   flex: 0 0 40%;
+// --- ЛІВА КОЛОНКА ---
+.cv-left-col {
+  background-color: $color-yellow;
+  color: $color-dark-blue;
+  display: flex;
+  flex-direction: column;
 }
 
-.cv-right-column {
-   background-color: $color-white;
-   color: $color-text-grey;
-   padding: 40px 50px;
-  flex: 0 0 60%;
+.left-col-content {
+  padding: 40px 30px;
+  flex-grow: 1;
+}
+
+// --- ПРАВА КОЛОНКА ---
+.cv-right-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-col-content {
+  background-color: $color-white;
+  color: $color-text-grey;
+  padding: 40px 50px;
+  flex-grow: 1;
 }

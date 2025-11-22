@@ -1,57 +1,58 @@
 @import 'variables';
 
 .experience-section {
-  padding-bottom: 20px;
   margin-bottom: 40px;
-  border-bottom: 1px solid #ddd;
 }
 
 .experience-title {
   color: $color-dark-blue;
-  position: relative;
-  padding-bottom: 10px;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background-color: $color-yellow;
-  }
+  padding-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  // Лінія під заголовком EXPERIENCE
+  border-bottom: 2px solid $color-yellow; // Жовта лінія, як на фото
+  display: inline-block; // Щоб лінія була по ширині тексту, або убери це, якщо треба на всю ширину
+  margin-bottom: 35px;
 }
 
+// Якщо треба лінію на всю ширину:
+// .experience-title { ... border-bottom: 1px solid #ddd; ... }
+// і жовта смужка через ::after. Зроблю простіше як на фото 6 (здається там просто лінія):
+
 .experience-item {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   .job-position {
-    font-weight: bold;
+    font-family: $font-heading;
+    font-weight: 700;
     font-size: 1.1em;
     color: $color-dark-blue;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 
   .job-meta {
     font-size: 0.85em;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
+    color: $color-text-grey;
 
     .job-present-tag {
       background-color: $color-dark-blue;
       color: $color-white;
-      padding: 2px 6px;
-      border-radius: 3px;
-      font-weight: bold;
-      margin-right: 5px;
+      padding: 3px 8px;
+      font-size: 0.8em;
+      font-weight: 700;
+      margin-right: 8px;
     }
+
     .job-years {
-      font-weight: bold;
+      font-weight: 700;
       color: $color-dark-blue;
     }
   }
 
   p {
+    line-height: 1.6;
     font-size: 0.9em;
-    line-height: 1.4;
   }
 }

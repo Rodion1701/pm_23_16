@@ -1,107 +1,127 @@
 @import 'variables';
 
-.header-top-bar {
-  height: 60px;
-}
-
-.header-top-left {
-  background-color: $color-yellow;
-  color: $color-dark-blue;
-  padding: 0;
+// === ЛІВА ЧАСТИНА (Адреса) ===
+.header-left-top {
+  height: 80px; // Висота має збігатися з правою частиною
+  padding: 25px 30px;
+  display: flex;
+  align-items: flex-start;
 
   .contact-block-area {
     display: flex;
-    align-items: center;
-    padding: 0 30px;
-    height: 100%;
+    align-items: flex-start;
 
-    i {
-      margin-right: 8px;
-      font-size: 1.5em;
+    .icon-box {
+      margin-right: 15px;
+      i {
+        font-size: 1.6em;
+        color: $color-dark-blue;
+      }
     }
 
-    .label {
-      display: block;
-      font-weight: bold;
-      font-size: 0.8em;
-    }
-
-    .street-address {
-      font-size: 0.7em;
-    }
-  }
-}
-
-.header-top-right {
-  background-color: $color-white;
-  color: $color-text-grey;
-  padding: 0 40px;
-  font-size: 0.8em;
-
-  .contacts {
-    gap: 30px;
-    .contact-item {
-      text-align: left;
+    .text-box {
       display: flex;
       flex-direction: column;
-
       .label {
-        display: block;
-        font-weight: bold;
-        color: $color-dark-blue;
+        font-weight: 700;
+        font-size: 0.85em;
+        margin-bottom: 2px;
+        font-family: $font-primary;
+      }
+      .street-address {
+        font-size: 0.75em;
+        font-weight: 400;
       }
     }
   }
 }
 
+.header-photo-area {
+  height: 320px; // Висота блоку фото
+  width: 100%;
+  overflow: hidden;
 
-.header-main {
-  .header-photo-area {
+  .header-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // Фільтр робить фото темним/жовтуватим, як на макеті
+    filter: grayscale(100%) brightness(0.9) sepia(0.2);
+    background-color: $color-dark-blue;
+  }
+}
 
-    padding: 0;
+// === ПРАВА ЧАСТИНА (Контакти + Ім'я) ===
 
-    .header-photo-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      background-color: #333;
+// Верхня біла смуга
+.header-right-top-bar {
+  height: 80px;
+  padding: 25px 40px;
+  background-color: $color-white;
+  color: $color-text-grey;
+
+  .contacts {
+    display: flex;
+    gap: 50px; // Відстань між телефоном, поштою, вебом
+
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.75em;
+
+      .label {
+        font-weight: 700;
+        color: $color-dark-blue;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+      }
+      span:last-child {
+        font-weight: 400;
+      }
     }
   }
+}
 
-  .header-title-area {
-    background-color: $color-dark-blue;
-    color: $color-white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+// Темний блок імені
+.header-name-area {
+  height: 320px;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $color-dark-blue;
+  color: $color-white;
 
-    h1 {
-      font-family: $font-heading, sans-serif;
-      font-size: 2.8em;
-      letter-spacing: 2px;
-      margin-bottom: 0.1em;
-    }
+  h1 {
+    font-family: $font-heading, sans-serif;
+    font-size: 4em; // Великий шрифт
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    line-height: 1;
+    font-weight: 700;
+  }
 
-    .title-underline {
-      width: 60px;
-      height: 3px;
-      background-color: $color-yellow;
-      margin-bottom: 15px;
-    }
+  .title-underline {
+    width: 70px;
+    height: 4px;
+    background-color: $color-yellow;
+    margin-bottom: 20px;
+  }
 
-    h2 {
-      font-family: $font-heading, sans-serif;
-      font-size: 1.1em;
-      font-weight: 400;
-      letter-spacing: 1px;
-      margin-bottom: 15px;
-    }
+  h2 {
+    font-family: $font-heading, sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
 
-    p {
-      font-size: 0.9em;
-      line-height: 1.5;
-      opacity: 0.85;
-      max-width: 400px;
-    }
+  p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    opacity: 0.8;
+    max-width: 500px;
   }
 }

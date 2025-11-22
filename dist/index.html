@@ -5,68 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме - Олексій Брагар</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/index.min.css">
 </head>
 <body>
 
-<div class="container cv-container p-0">
+<div class="container cv-container">
 
-    <header class="header">
+    <div class="row g-0 cv-body-row">
 
-    <div class="header-top-bar row g-0">
-        <div class="col-5 header-top-left d-flex align-items-center justify-content-start">
-            <div class="contact-block-area">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                    <span class="label">AREA</span>
-                    <span class="street-address">Your Street Address Here</span>
+        <aside class="col-md-5 cv-left-col">
+
+            <div class="header-left-top">
+                <div class="contact-block-area">
+                    <div class="icon-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="label">AREA</span>
+                        <span class="street-address">Your Street Address Here</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-7 header-top-right d-flex align-items-center justify-content-end">
-            <div class="contacts d-flex">
-                <div class="contact-item">
-                    <span class="label">PHONE</span>
-                    <span>+000 123 456 789</span>
-                </div>
-                <div class="contact-item">
-                    <span class="label">EMAIL</span>
-                    <span>urname@gmail.com</span>
-                </div>
-                <div class="contact-item">
-                    <span class="label">WEB</span>
-                    <span>www.websitename.com</span>
-                </div>
+
+            <div class="header-photo-area">
+                <img src="imgs/photo.png" alt="Ваше фото" class="header-photo-img">
             </div>
-        </div>
-    </div>
 
-    <div class="header-main row g-0">
-        <div class="col-5 header-photo-area">
-            <img src="imgs/photo.png" alt="Ваше фото" class="header-photo-img">
-        </div>
-        <div class="col-7 header-title-area p-5">
-            <h1>ALEX BRAHAR</h1>
-            <div class="title-underline"></div>
-            <h2>UI DESIGNER</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elitsed eiusmod
-                tempor incididunt labore dolore magna aliqua. Quis suspendisse ultrices
-                gravida euismod tempor incididunt labore magna aliqua.
-            </p>
-        </div>
-    </div>
-</header>
-
-    <main class="row g-0 cv-main">
-
-        <section class="col-md-5 cv-left-column">
-            <div class="education-section">
+            <div class="left-col-content">
+                <div class="education-section">
     <h3 class="section-title education-title">Education</h3>
 
     <div class="education-item">
@@ -85,31 +54,71 @@
         <div class="years">2009-2011</div>
     </div>
 </div>
-            <div class="hobby-section">
+                <div class="hobby-section">
     <h3 class="section-title hobby-title">Hobbies</h3>
-    <div class="hobby-list d-flex justify-content-between text-center">
+    <div class="hobby-list">
         <div class="hobby-item">
-            <i class="fas fa-plane"></i>
+            <div class="hobby-circle">
+                <i class="fas fa-plane"></i>
+            </div>
             <span>Travel</span>
         </div>
         <div class="hobby-item">
-            <i class="fas fa-music"></i>
+            <div class="hobby-circle">
+                <i class="fas fa-music"></i>
+            </div>
             <span>Music</span>
         </div>
         <div class="hobby-item">
-            <i class="fas fa-pencil-alt"></i>
+            <div class="hobby-circle">
+                <i class="fas fa-pencil-alt"></i>
+            </div>
             <span>Writing</span>
         </div>
         <div class="hobby-item">
-            <i class="fas fa-chess-knight"></i>
+            <div class="hobby-circle">
+                <i class="fas fa-chess-knight"></i>
+            </div>
             <span>Chess</span>
         </div>
     </div>
 </div>
-        </section>
+            </div>
+        </aside>
 
-        <section class="col-md-7 cv-right-column">
-            <div class="experience-section">
+
+        <main class="col-md-7 cv-right-col">
+
+            <div class="header-right-top-bar">
+                <div class="contacts">
+                    <div class="contact-item">
+                        <span class="label">PHONE</span>
+                        <span>+000 123 456 789</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">EMAIL</span>
+                        <span>urname@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">WEB</span>
+                        <span>www.websitename.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-name-area">
+                <h1>ALEX BRAHAR</h1>
+                <div class="title-underline"></div>
+                <h2>UI DESIGNER</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elitsed eiusmod
+                    tempor incididunt labore dolore magna aliqua. Quis suspendisse ultrices
+                    gravida euismod tempor incididunt labore magna aliqua.
+                </p>
+            </div>
+
+            <div class="right-col-content">
+                <div class="experience-section">
     <h3 class="section-title experience-title">Experience</h3>
 
     <div class="experience-item">
@@ -139,30 +148,31 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
     </div>
 </div>
-            <div class="expertise-section mt-5">
+                <div class="expertise-section mt-5">
     <h3 class="section-title expertise-title">Expertise</h3>
 
-    <div class="row expertise-list text-center">
-        <div class="col-3 expertise-item d-flex flex-column align-items-center">
-            <div class="circle-icon mb-1">Ps</div>
-            <span>Adobe Photoshop</span>
+    <div class="expertise-list d-flex justify-content-between text-center">
+        <div class="expertise-item d-flex flex-column align-items-center">
+            <div class="circle-icon">Ps</div>
+            <span>Adobe<br>Photoshop</span>
         </div>
-        <div class="col-3 expertise-item d-flex flex-column align-items-center">
-            <div class="circle-icon mb-1">Ai</div>
-            <span>Adobe Illustrator</span>
+        <div class="expertise-item d-flex flex-column align-items-center">
+            <div class="circle-icon">Ai</div>
+            <span>Adobe<br>Illustrator</span>
         </div>
-        <div class="col-3 expertise-item d-flex flex-column align-items-center">
-            <div class="circle-icon mb-1">Id</div>
-            <span>Adobe InDesign</span>
+        <div class="expertise-item d-flex flex-column align-items-center">
+            <div class="circle-icon">Id</div>
+            <span>Adobe<br>InDesign</span>
         </div>
-        <div class="col-3 expertise-item d-flex flex-column align-items-center">
-            <div class="circle-icon mb-1">Pp</div>
-            <span>Power Point</span>
+        <div class="expertise-item d-flex flex-column align-items-center">
+            <div class="circle-icon">Pp</div>
+            <span>Power<br>Point</span>
         </div>
     </div>
 </div>
-        </section>
-    </main>
+            </div>
+        </main>
+    </div>
 </div>
 
 <script src="js/bootstrap.bundle.min.js"></script>

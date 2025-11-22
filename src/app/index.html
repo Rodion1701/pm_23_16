@@ -5,31 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме - Олексій Брагар</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/index.min.css">
 </head>
 <body>
 
-<div class="container cv-container p-0">
+<div class="container cv-container">
 
-    @@include('src/app/components/header.html')
+    <div class="row g-0 cv-body-row">
 
-    <main class="row g-0 cv-main">
+        <aside class="col-md-5 cv-left-col">
 
-        <section class="col-md-5 cv-left-column">
-            @@include('src/app/components/education.html')
-            @@include('src/app/components/hobby.html')
-        </section>
+            <div class="header-left-top">
+                <div class="contact-block-area">
+                    <div class="icon-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="label">AREA</span>
+                        <span class="street-address">Your Street Address Here</span>
+                    </div>
+                </div>
+            </div>
 
-        <section class="col-md-7 cv-right-column">
-            @@include('src/app/components/experience.html')
-            @@include('src/app/components/expertise.html')
-        </section>
-    </main>
+            <div class="header-photo-area">
+                <img src="imgs/photo.png" alt="Ваше фото" class="header-photo-img">
+            </div>
+
+            <div class="left-col-content">
+                @@include('src/app/components/education.html')
+                @@include('src/app/components/hobby.html')
+            </div>
+        </aside>
+
+
+        <main class="col-md-7 cv-right-col">
+
+            <div class="header-right-top-bar">
+                <div class="contacts">
+                    <div class="contact-item">
+                        <span class="label">PHONE</span>
+                        <span>+000 123 456 789</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">EMAIL</span>
+                        <span>urname@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">WEB</span>
+                        <span>www.websitename.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-name-area">
+                <h1>ALEX BRAHAR</h1>
+                <div class="title-underline"></div>
+                <h2>UI DESIGNER</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elitsed eiusmod
+                    tempor incididunt labore dolore magna aliqua. Quis suspendisse ultrices
+                    gravida euismod tempor incididunt labore magna aliqua.
+                </p>
+            </div>
+
+            <div class="right-col-content">
+                @@include('src/app/components/experience.html')
+                @@include('src/app/components/expertise.html')
+            </div>
+        </main>
+    </div>
 </div>
 
 <script src="js/bootstrap.bundle.min.js"></script>

@@ -1,25 +1,40 @@
 @import 'variables';
 
 .hobby-section {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .hobby-title {
   color: $color-dark-blue;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba($color-dark-blue, 0.3); // Тонка лінія під заголовком
+  margin-bottom: 30px;
 }
 
 .hobby-list {
-  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
 
   .hobby-item {
+    text-align: center;
     color: $color-dark-blue;
-    font-size: 0.8em;
+    font-size: 0.85em;
+    font-weight: 500;
 
-    i {
-      font-size: 1.5em;
-      margin-bottom: 5px;
-      display: block;
+    .hobby-circle {
+      width: 55px;
+      height: 55px;
+      border: 2px solid $color-dark-blue; // Тонка рамка
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 15px auto; // Центрування
+
+      i {
+        font-size: 1.4em;
+      }
     }
   }
 }
