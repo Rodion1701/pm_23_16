@@ -1,36 +1,43 @@
 @import 'variables';
 
 .education-section {
-  margin-bottom: 40px;
+  margin-bottom: 50px; // Більший відступ знизу
 }
 
 .education-title {
   color: $color-dark-blue;
   padding-bottom: 15px;
-  // Лінія під заголовком в лівій колонці
-  border-bottom: 2px solid rgba($color-dark-blue, 0.3);
-  margin-bottom: 30px;
+  border-bottom: 1px solid rgba($color-dark-blue, 0.3);
+  margin-bottom: 35px;
+  // Шрифт заголовка як на макеті
+  font-family: $font-heading;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.4em;
 }
 
 .education-item {
-  margin-bottom: 30px;
+  margin-bottom: 35px; // Більший відступ між пунктами
 
   .major {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1em;
+    // Трохи збільшено шрифт спеціальності
+    font-size: 1.05em;
     color: $color-dark-blue;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-family: $font-primary;
   }
 
   .university {
-    font-size: 0.9em;
+    font-size: 0.95em; // Трохи більший шрифт
     margin-bottom: 5px;
+    font-weight: 500;
   }
 
   .years {
-    font-size: 0.8em;
-    font-weight: 300;
-    opacity: 0.7;
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.8;
   }
 }

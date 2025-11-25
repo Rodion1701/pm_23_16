@@ -7,52 +7,54 @@
 .experience-title {
   color: $color-dark-blue;
   padding-bottom: 15px;
+  font-family: $font-heading;
   font-size: 1.5em;
   font-weight: 700;
   letter-spacing: 1px;
-  // Лінія під заголовком EXPERIENCE
-  border-bottom: 2px solid $color-yellow; // Жовта лінія, як на фото
-  display: inline-block; // Щоб лінія була по ширині тексту, або убери це, якщо треба на всю ширину
+  text-transform: uppercase;
+  // Тільки тонка сіра лінія на всю ширину
+  border-bottom: 1px solid #eee;
   margin-bottom: 35px;
 }
 
-// Якщо треба лінію на всю ширину:
-// .experience-title { ... border-bottom: 1px solid #ddd; ... }
-// і жовта смужка через ::after. Зроблю простіше як на фото 6 (здається там просто лінія):
-
 .experience-item {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
   .job-position {
     font-family: $font-heading;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1.15em;
     color: $color-dark-blue;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .job-meta {
-    font-size: 0.85em;
+    // Вирівнюємо бейдж і текст в один рядок
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
     margin-bottom: 15px;
     color: $color-text-grey;
 
-    .job-present-tag {
+    // Єдиний стиль для всіх дат (Present і років)
+    .job-date-badge {
       background-color: $color-dark-blue;
       color: $color-white;
-      padding: 3px 8px;
-      font-size: 0.8em;
+      padding: 4px 10px; // Більші внутрішні відступи
+      font-size: 0.85em;
       font-weight: 700;
-      margin-right: 8px;
+      margin-right: 12px; // Відступ до назви компанії
+      text-transform: uppercase;
     }
 
-    .job-years {
-      font-weight: 700;
-      color: $color-dark-blue;
+    .company-name {
+      font-weight: 500;
     }
   }
 
   p {
     line-height: 1.6;
-    font-size: 0.9em;
+    font-size: 0.95em;
+    color: darken($color-text-grey, 10%);
   }
 }

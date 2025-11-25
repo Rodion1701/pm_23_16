@@ -1,9 +1,11 @@
 // Кольори
-$color-yellow: #FFB400; // Насичений жовтий (як на макеті)
-$color-dark-blue: #232938; // Темний колір, майже чорний
+$color-yellow: #FFB400; // Основний жовтий
+$color-dark-blue: #232938; // Темно-синій для фонів і тексту
 $color-white: #ffffff;
-$color-text-grey: #666; // Сірий для основного тексту
+$color-text-grey: #666666; // Сірий для основного тексту
+$color-border-grey: #dddddd; // Світло-сірий для ліній
+$color-body-bg: #e0e0e0; // Сірий фон сторінки
 
-// Шрифти
-$font-primary: 'Roboto', sans-serif;
-$font-heading: 'Oswald', sans-serif;
+// Шрифти (потрібно підключити в index.html)
+$font-primary: 'Roboto', sans-serif; // Для основного тексту
+$font-heading: 'Oswald', sans-serif; // Для заголовків
