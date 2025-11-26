@@ -1,20 +1,26 @@
 @import 'variables';
 
 .experience-section {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
+// Стиль заголовка з лінією на всю ширину
 .experience-title {
-  color: $color-dark-blue;
-  padding-bottom: 15px;
   font-family: $font-heading;
-  font-size: 1.5em;
   font-weight: 700;
-  letter-spacing: 1px;
   text-transform: uppercase;
-  // Тільки тонка сіра лінія на всю ширину
-  border-bottom: 1px solid #eee;
+  letter-spacing: 1px;
+  color: $color-dark-blue;
+  font-size: 1.5em;
   margin-bottom: 35px;
+  padding-bottom: 15px;
+
+  // Лінія на всю ширину
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid rgba($color-dark-blue, 0.2); // Тонка темна лінія
+  margin-right: -410px;
+  padding-right: 410px;
 }
 
 .experience-item {
@@ -29,21 +35,19 @@
   }
 
   .job-meta {
-    // Вирівнюємо бейдж і текст в один рядок
     display: flex;
     align-items: center;
     font-size: 0.9em;
     margin-bottom: 15px;
     color: $color-text-grey;
 
-    // Єдиний стиль для всіх дат (Present і років)
     .job-date-badge {
       background-color: $color-dark-blue;
       color: $color-white;
-      padding: 4px 10px; // Більші внутрішні відступи
+      padding: 4px 10px;
       font-size: 0.85em;
       font-weight: 700;
-      margin-right: 12px; // Відступ до назви компанії
+      margin-right: 12px;
       text-transform: uppercase;
     }
 

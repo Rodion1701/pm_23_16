@@ -1,50 +1,48 @@
 @import 'variables';
 
 .hobby-section {
-  // Збільшено відступ зверху, щоб опустити секцію
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .hobby-title {
-  color: $color-dark-blue;
-  padding-bottom: 15px;
-  border-bottom: 1px solid rgba($color-dark-blue, 0.3); // Тонша лінія
-  margin-bottom: 30px;
   font-family: $font-heading;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: $color-dark-blue;
+  margin-bottom: 35px;
+  padding-bottom: 15px;
+
+  display: block;
+  border-bottom: 1px solid rgba($color-dark-blue, 0.3);
+
+  // МАГІЯ: Тягнемо лінію до правого краю
+  margin-right: -30px;
+  padding-right: 30px;
 }
 
 .hobby-list {
   display: flex;
   justify-content: space-between;
-  padding-right: 10px;
 
+  // ... (решта стилів без змін)
   .hobby-item {
     text-align: center;
     color: $color-dark-blue;
-
     .hobby-circle {
-      // Зменшено розмір кружечків
-      width: 50px;
-      height: 50px;
-      border: 1px solid $color-dark-blue; // Тонша рамка (1px)
+      width: 55px;
+      height: 55px;
+      border: 2px solid $color-dark-blue;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 0 auto 15px auto;
-
-      i {
-        // Зменшено розмір іконки
-        font-size: 1.2em;
-      }
+      i { font-size: 1.4em; }
     }
-
     span {
-      // Збільшено шрифт підпису і додано жирності
       font-size: 0.9em;
-      font-weight: 700;
+      font-weight: 500;
       text-transform: uppercase;
     }
   }
