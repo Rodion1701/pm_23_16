@@ -4,7 +4,6 @@
   margin-top: 60px;
 }
 
-// Стиль заголовка з лінією на всю ширину
 .expertise-title {
   font-family: $font-heading;
   font-weight: 700;
@@ -15,7 +14,6 @@
   margin-bottom: 40px;
   padding-bottom: 15px;
 
-  // Лінія на всю ширину (прибрали жовту, зробили темну як в Experience)
   display: block;
   width: 100%;
   border-bottom: 1px solid rgba($color-dark-blue, 0.2);
@@ -41,7 +39,6 @@
       justify-content: center;
       align-items: center;
 
-      // Градієнт починається знизу (180deg)
       background: conic-gradient(from 180deg, $color-dark-blue calc(var(--p) * 1%), #e0e0e0 0);
 
       &::before {

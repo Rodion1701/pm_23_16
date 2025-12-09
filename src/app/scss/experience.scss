@@ -4,7 +4,6 @@
   margin-bottom: 50px;
 }
 
-// Стиль заголовка з лінією на всю ширину
 .experience-title {
   font-family: $font-heading;
   font-weight: 700;
@@ -15,10 +14,9 @@
   margin-bottom: 35px;
   padding-bottom: 15px;
 
-  // Лінія на всю ширину
   display: block;
   width: 100%;
-  border-bottom: 1px solid rgba($color-dark-blue, 0.2); // Тонка темна лінія
+  border-bottom: 1px solid rgba($color-dark-blue, 0.2);
   margin-right: -410px;
   padding-right: 410px;
 }

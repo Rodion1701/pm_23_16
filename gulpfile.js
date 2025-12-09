@@ -30,6 +30,13 @@ const html_task = () => {
         .pipe(browserSync.stream());
 }
 
+// --- НОВЕ ЗАВДАННЯ ДЛЯ JSON (Лаб 5) ---
+const json_task = () => {
+    return src('src/app/data.json')
+        .pipe(dest('dist/'))
+        .pipe(browserSync.stream());
+}
+
 const js_task = () => {
     return src('src/app/js/*.js')
         .pipe(uglify())
@@ -67,10 +74,13 @@ const watch_task = () => {
     watch('src/app/**/*.html', html_task);
     watch('src/app/js/*.js', js_task);
     watch('src/app/scss/**/*.scss', scss_task);
+    // Слідкуємо за змінами в JSON
+    watch('src/app/data.json', json_task);
     watch('src/app/imgs/**/*.{png,jpg,jpeg,svg,gif,webp}', series(img_task, browserSync.reload));
 }
 
-const build = series(html_task, parallel(scss_task, js_task, img_task, bootstrap_css_task, bootstrap_js_task));
+// Додаємо json_task у build
+const build = series(html_task, parallel(scss_task, js_task, img_task, json_task, bootstrap_css_task, bootstrap_js_task));
 
 exports.default = series(
     build,

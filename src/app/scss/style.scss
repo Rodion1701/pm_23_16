@@ -7,7 +7,6 @@
 @import 'expertise';
 
 
-// Лаб. 3: Міксин для стилізації заголовків
 @mixin section-title-mixin($font-family, $font-size) {
   font-family: $font-family;
   font-size: $font-size;
@@ -25,11 +24,11 @@
 body {
   margin: 0;
   font-family: $font-primary;
-  color: $color-text-grey; // Використовуємо сірий для body
-  background-color: #f5f5f5; // Світлий фон сторінки
+  color: $color-text-grey;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: center;
-  padding: 30px 0; // Відступи навколо CV-картки
+  padding: 30px 0;
 }
 
 .cv-container {
@@ -42,4 +41,24 @@ body {
 
 .section-title {
   @include section-title-mixin($font-heading, 1.8em);
+}
+.toggle-arrow {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: transform 0.3s ease;
+  color: $color-yellow;
+}
+
+.toggle-arrow.rotated {
+  transform: rotate(180deg);
+}
+
+.hidden-content {
+  display: none;
+}
+
+#person-name {
+  white-space: pre-wrap;
 }

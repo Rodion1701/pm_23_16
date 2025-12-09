@@ -1,0 +1,27 @@
+{
+  "personalData": {
+    "firstName": "ALEX",
+    "lastName": "BRAHAR",
+    "position": "UI DESIGNER"
+  },
+  "experience": [
+    {
+      "position": "Senior UI/UX Designer",
+      "dates": "Present",
+      "company": "Google / London",
+      "description": "Leading the design team, creating user-centered designs for global products. Working with data-driven design."
+    },
+    {
+      "position": "Web Designer",
+      "dates": "2017 - 2019",
+      "company": "Adobe / New York",
+      "description": "Developed creative concepts for web applications. Focused on interaction design and prototyping."
+    },
+    {
+      "position": "Junior Graphic Designer",
+      "dates": "2015 - 2017",
+      "company": "Freelance / Remote",
+      "description": "Created visual identities and marketing materials. Worked closely with small business owners."
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 @import 'variables';
 
 .education-section {
-  margin-top: 40px;
-  margin-bottom: 50px;
+
+  margin-bottom: 100px;
 }
 
 .education-title {
@@ -16,20 +16,15 @@
 
   display: block;
 
-  // 1. Лінія знизу
   border-bottom: 1px solid rgba($color-dark-blue, 0.3);
 
-  // 2. МАГІЯ: Від'ємний відступ, щоб лінія дійшла до правого краю жовтого блоку
   margin-right: -30px;
 
-  // 3. (Опціонально) Додаємо внутрішній відступ, щоб сама лінія була довгою,
-  // але якщо текст довгий, він не прилипав до краю
   padding-right: 30px;
 }
 
 .education-item {
   margin-bottom: 35px;
-  // ... (решта стилів без змін)
   .major {
     text-transform: uppercase;
     font-weight: 700;

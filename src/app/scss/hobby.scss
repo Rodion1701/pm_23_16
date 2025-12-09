@@ -16,7 +16,6 @@
   display: block;
   border-bottom: 1px solid rgba($color-dark-blue, 0.3);
 
-  // МАГІЯ: Тягнемо лінію до правого краю
   margin-right: -30px;
   padding-right: 30px;
 }
@@ -25,7 +24,6 @@
   display: flex;
   justify-content: space-between;
 
-  // ... (решта стилів без змін)
   .hobby-item {
     text-align: center;
     color: $color-dark-blue;

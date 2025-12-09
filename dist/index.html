@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме - Олексій Брагар</title>
+    <title>Alex Brahar - UI Designer Resume</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.min.css">
@@ -13,7 +13,6 @@
 <body>
 
 <div class="container cv-container">
-
     <div class="row g-0 cv-body-row">
 
         <aside class="col-md-5 cv-left-col">
@@ -31,29 +30,34 @@
             </div>
 
             <div class="header-photo-area">
-                <img src="imgs/photo.png" alt="Ваше фото" class="header-photo-img">
+                <img src="imgs/photo.png" alt="User Photo" class="header-photo-img">
             </div>
 
             <div class="left-col-content">
-                <div class="education-section">
-    <h3 class="section-title education-title">Education</h3>
 
-    <div class="education-item">
-        <div class="major">ENTER YOUR MAJOR</div>
-        <div class="university">Name Of Your University Here</div>
-        <div class="years">2005-2009</div>
-    </div>
-    <div class="education-item">
-        <div class="major">ENTER YOUR MAJOR</div>
-        <div class="university">Name Of Your University Here</div>
-        <div class="years">2009-2011</div>
-    </div>
-    <div class="education-item">
-        <div class="major">ENTER YOUR MAJOR</div>
-        <div class="university">Name Of Your University Here</div>
-        <div class="years">2009-2011</div>
-    </div>
-</div>
+                <div class="education-section">
+                    <h3 class="section-title education-title">
+                        Education <i class="fas fa-chevron-down toggle-arrow"></i>
+                    </h3>
+                    <div class="section-content">
+                        <div class="education-item">
+                            <div class="major">ENTER YOUR MAJOR</div>
+                            <div class="university">Name Of Your University Here</div>
+                            <div class="years">2005-2009</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="major">ENTER YOUR MAJOR</div>
+                            <div class="university">Name Of Your University Here</div>
+                            <div class="years">2009-2011</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="major">ENTER YOUR MAJOR</div>
+                            <div class="university">Name Of Your University Here</div>
+                            <div class="years">2009-2011</div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="hobby-section">
     <h3 class="section-title hobby-title">Hobbies</h3>
     <div class="hobby-list">
@@ -86,7 +90,6 @@
             </div>
         </aside>
 
-
         <main class="col-md-7 cv-right-col">
 
             <div class="header-right-top-bar">
@@ -107,9 +110,7 @@
             </div>
 
             <div class="header-name-area">
-                <h1 class="name-title">
-                    ALEX<br>BRAHAR
-                </h1>
+                <h1 class="name-title" id="person-name"></h1>
 
                 <h2 class="job-title">UI DESIGNER</h2>
 
@@ -121,36 +122,15 @@
             </div>
 
             <div class="right-col-content">
+
                 <div class="experience-section">
-    <h3 class="section-title experience-title">Experience</h3>
+                    <h3 class="section-title experience-title">
+                        Experience <i class="fas fa-chevron-down toggle-arrow"></i>
+                    </h3>
 
-    <div class="experience-item">
-        <div class="job-position">Enter Job Position Here</div>
-        <div class="job-meta">
-            <span class="job-date-badge">Present</span>
-            <span class="company-name">Company Name / Location</span>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-    </div>
+                    <div class="section-content" id="experience-container"></div>
+                </div>
 
-    <div class="experience-item">
-        <div class="job-position">Enter Job Position Here</div>
-        <div class="job-meta">
-            <span class="job-date-badge">2017 - 2019</span>
-            <span class="company-name">Company Name / Location</span>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-    </div>
-
-    <div class="experience-item">
-        <div class="job-position">Enter Job Position Here</div>
-        <div class="job-meta">
-            <span class="job-date-badge">2015 - 2017</span>
-            <span class="company-name">Company Name / Location</span>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-    </div>
-</div>
                 <div class="expertise-section mt-5">
     <h3 class="section-title expertise-title">Expertise</h3>
 

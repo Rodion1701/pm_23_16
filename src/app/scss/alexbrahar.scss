@@ -4,11 +4,9 @@ body {
   background-color: #e0e0e0;
 }
 
-// Основний контейнер
 .cv-container {
   background-color: $color-white;
 
-  // Біла рамка навколо всього резюме
   padding: 30px;
 
   max-width: 1000px;
@@ -22,26 +20,21 @@ body {
   min-height: 1000px;
 }
 
-// --- ЛІВА КОЛОНКА ---
 .cv-left-col {
   background-color: #ffc81f;
   color: $color-dark-blue;
   display: flex;
   flex-direction: column;
-  // Тут прибрали border-left, щоб смуга не йшла донизу
 }
 
-// Контент зліва
 .left-col-content {
   padding: 40px 30px;
   flex-grow: 1;
 }
 
-// --- ПРАВА КОЛОНКА ---
 .cv-right-col {
   display: flex;
   flex-direction: column;
-  // Тут прибрали border-right
 }
 
 .right-col-content {
